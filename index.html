@@ -1,16 +1,28 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Calculus</title>
-    </head>
-    <body>
-        <div id="page">
-            <button onclick="start()">Вывести график</button>
-            <div id="plot"></div>
-        </div>
-        <script src="js/skeleton/plot.min.js"></script>
-        <script src="js/algo.js"></script>
-        <link rel="stylesheet" href="css/styles.css">
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculus</title>
+</head>
+<body>
+<div id="page">
+    <div id="controls">
+        <button onclick="start()">Вывести график</button>
+        <form>
+            <label class="block"><input type="radio" onclick="visibility()" name="radgroup" value="0" checked>
+                Интерактивный </label>
+            <label class="block"><input type="radio" onclick="visibility()" name="radgroup" value="1"> Статичный
+            </label>
+        </form>
+    </div>
+    <div id="plot">
+        <div id="graph"></div>
+        <div id="plot_bg"></div>
+        <canvas id="plot_static"></canvas>
+    </div>
+</div>
+<script src="js/skeleton/plot.min.js"></script>
+<script src="js/algo.js"></script>
+<link rel="stylesheet" href="css/styles.css">
+</body>
 </html>

@@ -2,6 +2,8 @@ div#page {
     text-align: center;
 }
 
+div#controls
+
 button {
     margin-top: 10px;
     margin-bottom: 20px;
@@ -9,4 +11,12 @@ button {
 
 div#plot {
     text-align: center;
+}
+
+#plot plot_bg, #overlay {
+  position: absolute;
+}
+
+#plot plot_bg, #overlay {
+  position: absolute;
 }

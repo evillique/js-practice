@@ -15,6 +15,20 @@ let options = {
 let sun = new Plotter("plot", options);
 const button = document.querySelector('button');
 
+
+
+function visibility(radioObj) {
+    if (radioObj.value === "0") {
+        document.getElementById("plot_bg").style.display = 'block';
+        document.getElementById("plot_static").style.display = 'block';
+        document.getElementById("plot").style.display = 'none';
+    } else if (radioObj.value === "1") {
+        document.getElementById("plot_bg").style.display = 'none';
+        document.getElementById("plot_static").style.display = 'none';
+        document.getElementById("plot").style.display = 'block';
+    }
+}
+
 //// List of negative powers of 3
 let three_pow = [];
 for (let i = 1; i <= max_precision; ++i) {
